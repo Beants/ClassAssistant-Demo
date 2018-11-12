@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pilab.maxu.Teacher.AddClassFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="16dp"
+                android:text="工号      :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_ac_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="13dp"
+                android:text="None"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="班级名称："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_ac_classname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入班级名称(英文+数字)"
+                android:inputType="text"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/shape_button"
+            android:text="增加班级" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pilab.maxu.Teacher.TeacherInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="16dp"
+                android:text="工号      :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_info_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="13dp"
+                android:text="None"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="原密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_info_password_old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入原密码"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="16dp"
+                android:text="新密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_info_password_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新密码"
+                android:inputType="textVisiblePassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="128dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="更改密码" />
+    </LinearLayout>
+</FrameLayout>

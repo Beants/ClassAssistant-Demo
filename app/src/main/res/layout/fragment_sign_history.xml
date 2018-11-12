@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pilab.maxu.Teacher.SignHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_his_ansyc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="点击刷新" />
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.pilab.maxu.calculator.calu.calu.CaluHistoryActivity">
+
+            <ListView
+                android:id="@+id/history_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </ListView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_teather"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="教师端" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabMode="fixed"
+            app:tabTextColor="#000000">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ti_teacher_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息" />
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ti_teacher_addclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班级管理" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ti_teacher_addsign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增加签到" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ti_teacher_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到历史" />
+
+        </android.support.design.widget.TabLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
